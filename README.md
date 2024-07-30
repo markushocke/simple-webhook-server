@@ -14,15 +14,17 @@ Prepare a MQTT broker instance accessible for the webhook server. Example: Mosqu
 # Get Started
 In index.js replace "\<MQTT SERVER\>" and "\<MQTT Topic\>" with your actual MQTT broker address and topic.
 
-# Local Run
+## Local Run
 
+```bash
 npm install
 npm run
+```
 
-# Docker Deployment
+## Docker Deployment
 
 Build docker image and run container with portmapping. Internal port is 3001.
 ```bash
 docker build -t sonnenbatterie-webhook .
 docker run -p 3001:3001 sonnenbatterie-webhook
-
+```
